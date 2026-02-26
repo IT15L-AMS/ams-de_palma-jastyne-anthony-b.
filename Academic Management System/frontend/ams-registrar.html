@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrar Dashboard | AMS</title>
+    <link rel="stylesheet" href="ams-registrar.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <i class="fas fa-folder-open"></i> AMS Registrar
+      </div>
+      <nav class="sidebar-menu">
+        <a href="#" class="menu-item active"
+          ><i class="fas fa-user-graduate"></i> Students</a
+        >
+        <a href="#" class="menu-item"
+          ><i class="fas fa-clipboard-list"></i> Enrollments</a
+        >
+        <a href="#" class="menu-item"
+          ><i class="fas fa-university"></i> Programs</a
+        >
+        <a href="#" class="menu-item"
+          ><i class="fas fa-file-alt"></i> Reports</a
+        >
+      </nav>
+    </aside>
+
+    <div class="main-wrapper">
+      <header class="top-nav">
+        <div class="search-bar"></div>
+        <div class="user-profile">
+          <span id="userName">Registrar Name</span>
+          <button class="logout-btn" onclick="handleLogout()">Logout</button>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="page-header">
+          <h1>Student & Enrollment Summary</h1>
+          <p>Manage academic records and course offerings.</p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="card">
+            <h3>New Enrollees</h3>
+            <div class="value">86</div>
+          </div>
+          <div class="card">
+            <h3>Total Courses</h3>
+            <div class="value">32</div>
+          </div>
+          <div class="card">
+            <h3>Pending Clearances</h3>
+            <div class="value">12</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Student Management Quick Actions</h3>
+          <div style="margin-top: 1.5rem; display: flex; gap: 12px">
+            <button class="action-btn">
+              <i class="fas fa-user-plus"></i> Add New Student
+            </button>
+            <button class="action-btn secondary">
+              <i class="fas fa-file-download"></i> Generate Enrollment Report
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../backend/ams-registrar-script.js"></script>
+  </body>
+</html>

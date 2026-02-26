@@ -1,0 +1,14 @@
+@import url("ams-student.css");
+
+:root {
+  --primary-color: #1e293b;
+}
+
+.sidebar-header {
+  color: #0f172a;
+}
+
+.menu-item.active {
+  border-right: 4px solid #0f172a;
+  color: #0f172a;
+}

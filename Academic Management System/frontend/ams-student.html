@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard | AMS</title>
+    <link rel="stylesheet" href="ams-student.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <i class="fas fa-graduation-cap"></i> AMS Portal
+      </div>
+      <nav class="sidebar-menu">
+        <a href="#" class="menu-item active"
+          ><i class="fas fa-home"></i> Dashboard</a
+        >
+        <a href="#" class="menu-item"><i class="fas fa-book"></i> My Courses</a>
+        <a href="#" class="menu-item"
+          ><i class="fas fa-file-invoice"></i> Grades</a
+        >
+        <a href="#" class="menu-item"
+          ><i class="fas fa-calendar-alt"></i> Schedule</a
+        >
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+      <header class="top-nav">
+        <div class="search-bar"></div>
+        <div class="user-profile">
+          <span id="userName">Student Name</span>
+          <button class="logout-btn" onclick="handleLogout()">Logout</button>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="page-header">
+          <h1>Welcome back, <span id="firstName">Student</span>!</h1>
+          <p style="color: #64748b">
+            Here is what's happening with your studies today.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="card">
+            <h3>Enrolled Courses</h3>
+            <div class="value">5</div>
+          </div>
+          <div class="card">
+            <h3>Overall GPA</h3>
+            <div class="value">3.8</div>
+          </div>
+          <div class="card">
+            <h3>Attendance</h3>
+            <div class="value">95%</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Upcoming Assignments</h3>
+          <p style="margin-top: 1rem; color: #64748b">
+            No pending assignments for today.
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <script src="../backend/ams-student-script.js"></script>
+  </body>
+</html>

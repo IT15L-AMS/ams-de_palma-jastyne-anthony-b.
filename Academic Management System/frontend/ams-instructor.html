@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instructor Dashboard | AMS</title>
+    <link rel="stylesheet" href="ams-instructor.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <i class="fas fa-chalkboard-teacher"></i> AMS Instructor
+      </div>
+      <nav class="sidebar-menu">
+        <a href="#" class="menu-item active"
+          ><i class="fas fa-book-open"></i> My Courses</a
+        >
+        <a href="#" class="menu-item"
+          ><i class="fas fa-pen-nib"></i> Grade Management</a
+        >
+        <a href="#" class="menu-item"
+          ><i class="fas fa-users"></i> Class Lists</a
+        >
+        <a href="#" class="menu-item"
+          ><i class="fas fa-calendar-check"></i> Attendance</a
+        >
+      </nav>
+    </aside>
+
+    <div class="main-wrapper">
+      <header class="top-nav">
+        <div class="search-bar"></div>
+        <div class="user-profile">
+          <span id="userName">Instructor Name</span>
+          <button class="logout-btn" onclick="handleLogout()">Logout</button>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="page-header">
+          <h1>Assigned Courses</h1>
+          <p>Manage your classes and submit student grades.</p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="card">
+            <h3>Active Classes</h3>
+            <div class="value">4</div>
+          </div>
+          <div class="card">
+            <h3>Total Students</h3>
+            <div class="value">160</div>
+          </div>
+          <div class="card">
+            <h3>Pending Grades</h3>
+            <div class="value">24</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Class Schedule (Today)</h3>
+          <p style="margin-top: 1rem; color: #64748b">
+            CS101 - Room 302 (10:00 AM)
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <script src="../backend/ams-instructor-script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+@import url("https://www.google.com/search?q=https://fonts.googleapis.com/css2%3Ffamily%3DInter:wght%40400%3B600%3B700%26display%3Dswap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f8fafc;
+}
+
+.hidden {
+  display: none;
+}
